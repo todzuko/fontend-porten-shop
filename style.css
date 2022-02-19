@@ -1,0 +1,254 @@
+.body{
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+    font-family: PT Sans, sans-serif;
+    font-style: normal;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__section{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.contact__item{
+    display: flex;
+    color: #969696;
+    gap: 5px;
+}
+.contact__link{
+    text-decoration: none;
+    color: #969696;
+}
+
+.header__menu{
+    display: flex;
+    list-style: none;
+    gap: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: #969696;
+    text-transform: uppercase;
+}
+
+.nav__item{
+    display: flex;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 30px 20px;
+    cursor: pointer;
+}
+
+.nav__item:hover{
+    color: white;
+    background-color: #1F1F1F;
+}
+
+.main__banner{
+    height: 810px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("src/main-banner.png") no-repeat center;
+}
+
+.banner__text{
+    max-width: 730px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 150%;
+    margin-top: 80px;
+}
+
+.logo{
+    width:320px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.header{
+    padding: 0;
+}
+
+.double__container{
+    display: flex;
+    height: 600px;
+}
+
+.small__block{
+    width: 45%;
+}
+
+.half__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.wide__block{
+    width: 55%;
+    padding: 80px 0;
+}
+
+.wide__block__text{
+    width: 470px;
+    text-align: center;
+    margin: auto;
+}
+
+.text__block{
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.big{
+    font-weight: 600;
+}
+
+.card__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 260px);
+
+    list-style: none;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+.first__bg{
+    background: url("/src/small-bkock1.png") no-repeat center;
+}
+.second__bg{
+    background: url("/src/small-block2.png") no-repeat center;
+}
+
+.card{
+    font-family: Playfair Display, serif;
+}
+
+.card__image{
+    display: flex;
+    justify-content: center;
+    background-color: #191B1C;
+    width: 260px;
+    height: 325px;
+}
+
+.card__image img{
+    margin: auto;
+}
+
+.card__title{
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.card__price{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.title{
+    font-family: Playfair Display, serif;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title__line{
+    width: 120px;
+    border-bottom: 1px solid #FFFFFF;
+    margin: 40px auto;
+}
+
+.footer__nav__wide{
+    background: url("./src/footer-bg.png") no-repeat center;
+}
+
+.footer__nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    height: 400px;
+    padding: 0;
+}
+
+.button{
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 10px 20px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.half__block .button{
+    align-self: center;
+}
+
+.footer__button{
+    font-family: PT Sans, sans-serif;
+    background-color: #0F0F0F;
+    border: none;
+    height: 42px;
+}
+
+.input__field{
+    width: 210px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+}
+
+.footer__nav__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.footer__nav__button{
+    background: #0F0F0F;
+    color: #D0D0D0;
+    padding: 10px 20px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.footer__nav .title{
+    text-align: start;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 30px 0;
+}
+
+.footer__caption{
+    padding: 0;
+}
+
+.footer__item{
+    margin-top: 50px;
+}
+
+.footer__caption{
+    flex-direction: row;
+    justify-content: space-between;
+}
