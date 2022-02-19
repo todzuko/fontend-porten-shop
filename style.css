@@ -25,6 +25,10 @@
     color: #969696;
 }
 
+.contact__link:hover{
+    color: #FFFFFF;
+}
+
 .header__menu{
     display: flex;
     list-style: none;
@@ -56,6 +60,7 @@
     justify-content: center;
     align-items: center;
     background: url("src/main-banner.png") no-repeat center;
+    background-size: cover;
 }
 
 .banner__text{
@@ -66,16 +71,39 @@
     margin-top: 80px;
 }
 
-.logo{
-    width:320px;
+.banner__logo{
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+.logo__line{
+    width: 180px;
+    border: 1px solid #FFFFFF;
+}
+
+.logo__caption{
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.logo__block{
+    border: 2px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 320px;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 70%;
+    margin: 0 15%;
     padding: 60px 0;
 }
 
@@ -88,6 +116,10 @@
     height: 600px;
 }
 
+.double__container:first-child{
+    height: 730px;
+}
+
 .small__block{
     width: 45%;
 }
@@ -95,7 +127,7 @@
 .half__block{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .wide__block{
@@ -106,7 +138,7 @@
 .wide__block__text{
     width: 470px;
     text-align: center;
-    margin: auto;
+    margin: 0 auto 40px auto;
 }
 
 .text__block{
@@ -128,10 +160,14 @@
 }
 
 .first__bg{
-    background: url("/src/small-bkock1.png") no-repeat center;
+    background: url("/src/small-block1.png") no-repeat center;
+    background-size: cover;
+    justify-content: end;
+    padding-bottom: 80px;
 }
 .second__bg{
     background: url("/src/small-block2.png") no-repeat center;
+    background-size: cover;
 }
 
 .card{
@@ -174,16 +210,27 @@
     margin: 40px auto;
 }
 
+.catalogue__line{
+    margin-bottom: 80px;
+}
+
 .footer__nav__wide{
     background: url("./src/footer-bg.png") no-repeat center;
+    background-size: cover;
 }
 
 .footer__nav{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
     gap: 30px;
     height: 400px;
     padding: 0;
+    flex-wrap: wrap;
+}
+
+.footer__item{
+    width: 30%;
+    min-width: 210px;
+    flex-grow: 1;
 }
 
 .button{
@@ -226,7 +273,6 @@
 }
 
 .footer__nav__button{
-    background: #0F0F0F;
     color: #D0D0D0;
     padding: 10px 20px;
     width: fit-content;
@@ -251,4 +297,30 @@
 .footer__caption{
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1400px){
+    .double__container{
+        flex-direction: column;
+        height: auto;
+    }
+    .half__block{
+        width: 100%;
+    }
+    .footer__nav{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .small__block{
+        height: 500px;
+    }
+    .second__bg{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .text__block{
+        width: auto;
+    }
 }

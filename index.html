@@ -22,7 +22,7 @@
         </div>
     </div>
     <nav class="header__section">
-        <div class="logo"><img src="./src/PORTEN.png"></div>
+        <div class="logo"><img src="./src/porten-logo.svg"></div>
         <ul class="header__menu">
             <li class="nav__item">Понравилось</li>
             <li class="nav__item">Личный кабинет</li>
@@ -34,7 +34,11 @@
 </header>
 <main>
     <div class="main__banner">
-        <img class="logo" src="/src/logo.svg">
+        <div class="logo__block">
+            <img class="banner__logo" src="./src/porten-logo.svg">
+            <div class="logo__line"></div>
+            <p class="logo__caption">санкт-петербург</p>
+        </div>
         <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Purus interdum purus, est tortor pulvinar ut in. Fringilla a
             diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum
@@ -90,7 +94,7 @@
     </div>
     <div class="container">
         <div class="title">новые поступления</div>
-        <div class="title__line"></div>
+        <div class="catalogue__line title__line"></div>
         <div class="card__list">
             <div class="card">
                 <div class="card__image"><img src="/src/card-watch.png"></div>
@@ -168,11 +172,11 @@
             <div class="footer__item">
                 <div class="title">Категории</div>
                 <div class="footer__nav__list">
-                    <div class="footer__nav__button">часы</div>
-                    <div class="footer__nav__button">браслеты</div>
-                    <div class="footer__nav__button">ремни</div>
-                    <div class="footer__nav__button">ювелирные изделия</div>
-                    <div class="footer__nav__button">запонки</div>
+                    <button class="footer__button footer__nav__button">часы</button>
+                    <button class="footer__button footer__nav__button">браслеты</button>
+                    <button class="footer__button footer__nav__button">ремни</button>
+                    <button class="footer__button footer__nav__button">ювелирные изделия</button>
+                    <button class="footer__button footer__nav__button">запонки</button>
                 </div>
             </div>
             <div class="footer__item">
@@ -182,7 +186,7 @@
                         Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.</p>
                     <form class="form">
                         <input class="input__field" type="text" placeholder="Ваша почта">
-                        <button class="button footer__button">ПОДПИСАТЬСЯ</button>
+                        <button class="button footer__button" type="submit">ПОДПИСАТЬСЯ</button>
                     </form>
                 </div>
             </div>
